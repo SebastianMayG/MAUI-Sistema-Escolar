@@ -2,13 +2,13 @@
 {
     public class PersonaModel
     {
-        public int Id { get; set; }
-        public string nombre {  get; set; }
-        public string apellido {  get; set; }
+        public int id { get; set; }
+        public required string nombre { get; set; }
+        public required string apellido {  get; set; }
 
-        public string sexo { get; set; }
+        public required string sexo { get; set; }
 
-        public string fh_nac {  get; set; }
+        public DateTime fh_nac {  get; set; }
 
         public int id_rol {  get; set; }
     }

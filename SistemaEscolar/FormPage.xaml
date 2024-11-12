@@ -3,12 +3,6 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SistemaEscolar.FormPage"
              Title="FormPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Formulario escuela"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center"/>
-    </VerticalStackLayout>
     
     <Grid>
         <Grid.ColumnDefinitions>
@@ -67,14 +61,17 @@
             </Grid.ColumnDefinitions>
 
             <RadioButton 
+                x:Name="RadioButtonH"
                 Content="h"
                 GroupName="sexo"
                 Grid.Column="0"/>
-            <RadioButton 
+            <RadioButton
+                x:Name="RadioButtonM"
                 Content="m"
                 GroupName="sexo"
                 Grid.Column="1"/>
             <RadioButton 
+                x:Name="RadioButtonO"
                 Content="o"
                 GroupName="sexo"
                 Grid.Column="3"/>
@@ -92,7 +89,8 @@
             MinimumDate="01/01/1900"
             MaximumDate="01/01/2100"
             Grid.Column="1"
-            Grid.Row="3"/>
+            Grid.Row="3"
+            x:Name="fh_nac"/>
 
         <Label
             Text="id_rol"
@@ -103,6 +101,7 @@
 
         <Picker 
             Title="Selecciona el rol"
+            x:Name="pckRol"
             Grid.Column="1"
             Grid.Row="4">
             <Picker.Items>
