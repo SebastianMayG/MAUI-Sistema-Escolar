@@ -5,6 +5,9 @@
         public AppShell()
         {
             InitializeComponent();
+
+            //Registra las rutas de navegación
+            Routing.RegisterRoute(nameof(FormPage), typeof(FormPage));
         }
     }
 }

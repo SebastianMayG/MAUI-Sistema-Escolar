@@ -1,24 +1,44 @@
-﻿namespace SistemaEscolar
+﻿using System.Collections.ObjectModel;
+using System.Text.Json;
+
+namespace SistemaEscolar
 {
     public partial class MainPage : ContentPage
     {
-        int count = 0;
+        private readonly HttpClient _httpClient = new HttpClient();
+
+        private ObservableCollection<PersonaModel> _personas;
+
+        public ObservableCollection<PersonaModel> Personas
+        {
+            get => _personas;
+            set
+            {
+                _personas = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public async void GetData()
+        {
+            var response = await _httpClient
+                .GetStringAsync("https://fi.jcaguilar.dev/v1/escuela/persona");
+            var personas = JsonSerializer
+                .Deserialize<ObservableCollection<PersonaModel>>(response);
+
+            Personas = personas;
+        }
 
         public MainPage()
         {
             InitializeComponent();
+            GetData();
+            BindingContext = this;
         }
 
-        private void OnCounterClicked(object sender, EventArgs e)
+        private async void Button_Clicked(object sender, EventArgs e)
         {
-            count++;
-
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
-            else
-                CounterBtn.Text = $"Clicked {count} times";
-
-            SemanticScreenReader.Announce(CounterBtn.Text);
+            await Navigation.PushAsync(new FormPage());
         }
     }
 

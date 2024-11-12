@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SistemaEscolar.FormPage"
+             Title="FormPage">
+    <VerticalStackLayout>
+        <Label 
+            Text="Formulario escuela"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"/>
+    </VerticalStackLayout>
+    
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width=".2*"/>
+            <ColumnDefinition Width=".8*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Label
+            Text="Nombre"
+            Grid.Column="0"
+            Grid.Row="0"
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="Center"/>
+
+        <Entry
+            x:Name="EntryNombre"
+            Placeholder="Ingresa tu nombre"
+            Grid.Column="1"
+            Grid.Row="0"/>
+
+        <Label
+            Text="Apellido"
+            Grid.Column="0"
+            Grid.Row="1"
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="Center"/>
+
+        <Entry
+            x:Name="EntryApellido"
+            Placeholder="Ingresa tu apellido"
+            Grid.Column="1"
+            Grid.Row="1"/>
+
+        <Label
+            Text="Sexo"
+            Grid.Column="0"
+            Grid.Row="2"
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="Center"/>
+
+        <Grid
+            Grid.Column="1"
+            Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width=".3*"/>
+                <ColumnDefinition Width=".3*"/>
+                <ColumnDefinition Width=".3*"/>
+            </Grid.ColumnDefinitions>
+
+            <RadioButton 
+                Content="h"
+                GroupName="sexo"
+                Grid.Column="0"/>
+            <RadioButton 
+                Content="m"
+                GroupName="sexo"
+                Grid.Column="1"/>
+            <RadioButton 
+                Content="o"
+                GroupName="sexo"
+                Grid.Column="3"/>
+            
+        </Grid>
+
+        <Label
+            Text="Fh_nac"
+            Grid.Column="0"
+            Grid.Row="3"
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="Center"/>
+
+        <DatePicker
+            MinimumDate="01/01/1900"
+            MaximumDate="01/01/2100"
+            Grid.Column="1"
+            Grid.Row="3"/>
+
+        <Label
+            Text="id_rol"
+            Grid.Column="0"
+            Grid.Row="4"
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="Center"/>
+
+        <Picker 
+            Title="Selecciona el rol"
+            Grid.Column="1"
+            Grid.Row="4">
+            <Picker.Items>
+                <x:String>Alumno</x:String>
+                <x:String>Profesor</x:String>
+                <x:String>Administrativo</x:String>
+                <x:String>Otro</x:String>
+            </Picker.Items>
+        </Picker>
+
+        <Button
+            Text="Guardar"
+            Grid.Column="1"
+            Grid.Row="5"
+            HorizontalOptions="Center"
+            Clicked="btnGuardar"/>
+
+        <Button
+            Text="Regresar"
+            Grid.Column="0"
+            Grid.Row="5"
+            HorizontalOptions="Center"
+            Clicked="btnRegresar"/>
+        
+    </Grid>
+</ContentPage>
