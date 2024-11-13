@@ -4,12 +4,13 @@ Este proyecto es una aplicacion de sistema escolar desarrollada en Visual Studio
 
 ## Características
 - Visualizacion de las personas.
-![Lista de personas](https://github.com/user-attachments/assets/7c69db4d-0edd-4060-922f-e269b2b0dee3)
+<img src="https://github.com/user-attachments/assets/7c69db4d-0edd-4060-922f-e269b2b0dee3" alt="Lista de personas" width="400" />
 - Agregar personas.
 ![Formulario de personas](https://github.com/user-attachments/assets/624c5615-4465-4dce-8f82-1503490efea7)
 - Roles personalizados (Alumnos, Profesor, Administrativo, Otro).
 ![Imagen de los roles](https://github.com/user-attachments/assets/41f289e8-fc47-4c93-9668-b75ed4dbe84c)
 - Integración de API.
+`https://fi.jcaguilar.dev/docs/#/default/createPersona`
 
 ## Instalación
 
