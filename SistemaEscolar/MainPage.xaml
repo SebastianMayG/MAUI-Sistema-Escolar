@@ -13,8 +13,8 @@
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <HorizontalStackLayout>
-                            <Label Text="{Binding nombre}" TextColor="White"/>
-                            <Label Text="{Binding apellido}"/>
+                            <Label Text="{Binding nombre}" TextColor="White" Margin="0,0,5,0"/>
+                            <Label Text="{Binding apellido}" Margin="0,0,5,0"/>
                         </HorizontalStackLayout>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>

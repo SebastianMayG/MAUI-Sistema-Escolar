@@ -30,7 +30,7 @@
     <AppXManifest Include="C:\Users\Lenovo\source\repos\SistemaEscolar\SistemaEscolar\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-11-12T22:55:08.056</Modified>
+      <Modified>2024-11-13T00:01:22.223</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -44,11 +44,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lenovo\source\repos\SistemaEscolar\SistemaEscolar\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\SistemaEscolar.dll">
       <PackagePath>SistemaEscolar.dll</PackagePath>
-      <Modified>2024-11-12T22:55:07.618</Modified>
+      <Modified>2024-11-13T00:01:21.086</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lenovo\source\repos\SistemaEscolar\SistemaEscolar\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>SistemaEscolar.exe</PackagePath>
-      <Modified>2024-11-12T22:55:07.618</Modified>
+      <Modified>2024-11-13T00:01:21.115</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lenovo\source\repos\SistemaEscolar\SistemaEscolar\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
